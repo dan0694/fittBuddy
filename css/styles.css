@@ -68,6 +68,7 @@ header ul li a {
 header ul li a:hover {
     color: #aa2b15;
     font-weight: bolder;
+    transition: 0.4s;
 }
 
 /* Estilos de la página principal */
@@ -238,7 +239,14 @@ textarea {
     color: #ffffff;
     padding: 1rem 0;
     margin: 1rem 0;
+    cursor: pointer;
 }
+
+.contactForm .button:hover{
+    background-color: #aa2b15;
+    transition: 0.3s;
+}
+
 
 .contactInfo {
     margin-top: 4rem;
@@ -267,7 +275,7 @@ textarea {
 
 .social a {
     color: #6b6b6b;
-    font-size: 1rem;
+    font-size: 2rem;
     text-decoration: none;
     font-weight: bold;
     margin: 0 1rem;
@@ -310,7 +318,13 @@ textarea {
     padding: 12px 0;
     width: 10rem;
     text-align: center;
-    border: none
+    border: none;
+    cursor: pointer;
+}
+
+.app-cover button:hover{
+    background-color: #aa2b15;
+    transition: 0.32s;
 }
 
 .app-cover img {
@@ -395,6 +409,9 @@ textarea {
     text-align: justify;
 
 }
+
+
+
 
 
 
@@ -514,7 +531,7 @@ textarea {
 
 
     .social a {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -752,7 +769,110 @@ textarea {
     }
 
     .social a {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
+
+    /* Animaciones */
+
+    .fadeRightUno {
+        animation-name: fadeRight;
+        animation-duration: 1s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+     .fadeRightDos {
+        animation-name: fadeRight;
+        animation-duration: 2s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+     .fadeRightTres {
+        animation-name: fadeRight;
+        animation-duration: 3s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+     .fadeUpUno {
+        animation-name: fadeUp;
+        animation-duration: .5s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+     .fadeUpDos {
+        animation-name: fadeUp;
+        animation-duration: 1s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+     .fadeUpTres {
+        animation-name: fadeUp;
+        animation-duration: 1.5s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+     .fadeUpCuatro {
+        animation-name: fadeUp;
+        animation-duration: 2s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+     .fadeUpCinco {
+        animation-name: fadeUp;
+        animation-duration: 2.5s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+
+      .fadeLeft {
+        animation-name: fadeLeft;
+        animation-duration: 1s;
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+    
+      }
+    
    
 }
+
+@keyframes fadeLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-2000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+
+ /* Keyframes */
+  @keyframes fadeRight {
+    0% {
+       opacity: 0;
+       transform: translateX(2000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+  @keyframes fadeUp {
+    0% {
+       opacity: 0;
+       transform: translateY(300px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }  
+ 
+  
