@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-/* Colores de paleta: https://coolors.co/palette/00193a-002b53-023f73-034780-7a0213-a10220-bf0a26-cd0c2b-131313-262626 */
+/* Colores de paleta: https://coolors.co/palette/00193a-002b53-023f73-034780-7a0213-a10220-bf0a26-cd0c2b-#212529-262626 */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
 
 }
 
-.container {
+.general-container {
     height: 100vh;
     display: grid;
     grid-template-columns: auto;
@@ -31,14 +31,15 @@ body {
 
 /* Estilos del header */
 
-header {
+/* header {
     width: 100%;
     top: 0;
     position: sticky;
     display: flex;
     flex-direction: column;
-    background-color: #131313;
+    background-color: #212529;
     grid-area: header;
+    z-index: 4;
 }
 
 header h1 {
@@ -65,10 +66,15 @@ header ul li a {
 
 }
 
-header ul li a:hover {
-    color: #aa2b15;
-    font-weight: bolder;
+ */
+
+ header ul li a:hover {
+    color: #aa2b15 !important;
     transition: 0.4s;
+}
+
+ul li a.active{
+    color: #ce3f26 !important;
 }
 
 /* Estilos de la página principal */
@@ -132,7 +138,7 @@ footer {
     flex-direction: column;
     grid-area: footer;
     width: 100%;
-    background-color: #131313;
+    background-color: #212529;
     font-size: 1rem;
     padding: 10px 0;
     color: #c7c7c7;
@@ -235,7 +241,7 @@ textarea {
 }
 
 .contactForm .button {
-    background-color: #131313;
+    background-color: #212529;
     color: #ffffff;
     padding: 1rem 0;
     margin: 1rem 0;
@@ -313,7 +319,7 @@ textarea {
 
 .app-cover button {
     margin: 1rem;
-    background-color: #131313;
+    background-color: #212529;
     color: #ffffff;
     padding: 12px 0;
     width: 10rem;
@@ -361,8 +367,9 @@ textarea {
 .testimonials {
     background-color: #e2e2e2;
     width: 100%;
-    padding: 50px;
-    height: 800px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonials h2 {
@@ -418,7 +425,7 @@ textarea {
 /* Mediaqueries */
 
 @media screen and (min-width:600px) {
-    header {
+    /* header {
         width: 100%;
     }
 
@@ -428,7 +435,7 @@ textarea {
 
     header ul li {
         font-size: 1.5rem;
-    }
+    } */
 
 
     /* Estilos de la página principal */
@@ -533,24 +540,17 @@ textarea {
     .social a {
         font-size: 2rem;
     }
+
+    /* Estilos de testimonios */
+
+    .testimonials {
+        height: 950px;
+        padding: 50px;
+    }
+
 }
 
 @media screen and (min-width:1024px) {
-    header {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-bottom: 0.5rem;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header ul li {
-        font-size: 1.5rem;
-    }
-
     footer p {
         font-size: 1.2rem;
 
@@ -770,6 +770,13 @@ textarea {
 
     .social a {
         font-size: 2rem;
+    }
+
+    /* Estilos de testimonios */
+
+    .testimonials {
+        height: 800px;
+        padding: 50px;
     }
 
     /* Animaciones */
