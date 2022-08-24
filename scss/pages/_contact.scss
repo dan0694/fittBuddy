@@ -1,0 +1,181 @@
+@import "../pages/variables";
+
+.contact-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+.contact{
+    padding: 1rem;
+    background-color: $color-light-dos;
+    color: $color-dark-dos;
+    font-weight: bold;
+
+    h2{
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.contactForm{
+    text-align: center;
+
+    .legend{
+        font-size: 1.5rem;
+    }
+
+    input, textarea{
+        padding: 15px;
+        border: 1px solid $color-light-tres;
+        margin: 5px;
+        font-size: 15px;
+        display: block;
+        width: 100%;
+    }
+
+    .button{
+        background-color: $color-dark-uno;
+        color: $color-light-tres;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        cursor: pointer;
+
+        &:hover{
+           background-color: $color-red; 
+           transition: 0.3s;
+        }
+        
+    }
+}
+
+.contactInfo{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    text-align: start;
+
+    p{
+        margin: 3rem 0;
+        font-size: 1.2rem;
+    }
+
+    img{
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        text-align: center; 
+    }
+}
+
+.social{
+    text-align: center;
+
+    a{
+        color: $color-gray;
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 1rem;
+
+        &:hover{
+            color: $color-red;
+            transition: ease 0.2s;
+        }
+    }
+}
+
+@media screen and (min-width: $bp-tablet){
+    .contactForm{
+        padding: 0 3rem;
+
+        input, textarea, .button{
+            padding: 1rem;
+            margin: 1rem;
+            font-size: 1rem;
+        }
+
+    }
+
+    .contactInfo{
+        padding: 0 4rem;
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+    }
+
+    .social{
+        a{
+            font-size: 2rem;
+        }
+    }
+
+}
+
+@media screen and(min-width: $bp-pc){
+    .contact{
+        display: grid;
+        grid-template-columns: 4fr 2.5fr;
+        align-items: center;
+    }
+
+    .form-container{
+        display: grid;
+        grid-template-areas: 
+            "input-a input-b"
+            "input-c input-d"
+            "textarea-a textarea-a"
+        ;
+        gap: 1rem;
+    }
+
+    .input-a{
+        grid-area: input-a;
+       
+    }
+    .input-b{
+        grid-area: input-b;
+    }
+    .input-c{
+        grid-area: input-c;
+    }
+    .input-d{
+        grid-area: input-d;
+    }
+    .text-a{
+        grid-area: textarea-a;
+    }
+
+    .contactForm{
+        legend, input, textarea{
+            font-size: 1.3rem;
+            padding: 1.5rem;
+        }
+    }
+
+    .contactInfo{
+        margin: 5rem 3rem;
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        h3{
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+    }
+}
