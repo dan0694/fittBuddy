@@ -1,4 +1,4 @@
-@import "../pages/variables";
+@import "../pages/util";
 
 .contact-container {
     display: grid;
@@ -31,26 +31,16 @@
     }
 
     input, textarea{
-        padding: 15px;
-        border: 1px solid $color-light-tres;
-        margin: 5px;
-        font-size: 15px;
-        display: block;
-        width: 100%;
+       padding: map-get($map: $input, $key: padding );
+       font-size: map-get($map: $input, $key: font );
+       border: map-get($map: $input, $key: border );
+       margin: map-get($map: $input, $key: margin );
+       display: map-get($map: $input, $key: display );
+       width: map-get($map: $input, $key: width );
     }
 
     .button{
-        background-color: $color-dark-uno;
-        color: $color-light-tres;
-        padding: 1rem 0;
-        margin: 1rem 0;
-        cursor: pointer;
-
-        &:hover{
-           background-color: $color-red; 
-           transition: 0.3s;
-        }
-        
+        @extend %btn-primary;
     }
 }
 
@@ -80,16 +70,7 @@
     text-align: center;
 
     a{
-        color: $color-gray;
-        font-size: 2rem;
-        text-decoration: none;
-        font-weight: bold;
-        margin: 0 1rem;
-
-        &:hover{
-            color: $color-red;
-            transition: ease 0.2s;
-        }
+        @extend %icon;
     }
 }
 
@@ -99,7 +80,7 @@
 
         input, textarea, .button{
             padding: 1rem;
-            margin: 1rem;
+            margin: 1rem 0;
             font-size: 1rem;
         }
 

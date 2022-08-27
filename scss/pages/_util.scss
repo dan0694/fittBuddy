@@ -1,0 +1,64 @@
+// Colores
+
+$color-light-dos: #e2e2e2;
+$color-light-tres: #cccccc;
+$color-gray: #6b6b6b;
+$color-dark-uno:#212529;
+$color-dark-dos: #181818;
+$color-red:#aa2b15;
+
+// Breakpoints
+
+$bp-tablet: 600px;
+$bp-pc: 1024px;
+
+// Extends
+%btn-primary{
+    background-color: $color-dark-uno;
+    color: $color-light-tres;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-red; 
+           transition: 0.3s;
+    }
+}
+
+%icon{
+    color: $color-gray;
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 1rem;
+
+        &:hover{
+            color: $color-red;
+            transition: ease 0.2s;
+        }
+}
+
+// Mapas
+
+$input:(
+    padding: 15px,
+    border: 1px solid $color-light-tres,
+    font: 15px,
+    display: block,
+    width: 100%
+);
+
+
+// Mixin
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+}

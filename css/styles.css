@@ -1,3 +1,23 @@
+.contactForm .button {
+  background-color: #212529;
+  color: #cccccc;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  cursor: pointer; }
+  .contactForm .button:hover {
+    background-color: #aa2b15;
+    transition: 0.3s; }
+
+.social a {
+  color: #6b6b6b;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem; }
+  .social a:hover {
+    color: #aa2b15;
+    transition: ease 0.2s; }
+
 .contact-container {
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
@@ -19,20 +39,10 @@
     font-size: 1.5rem; }
   .contactForm input, .contactForm textarea {
     padding: 15px;
-    border: 1px solid #cccccc;
-    margin: 5px;
     font-size: 15px;
+    border: 1px solid #cccccc;
     display: block;
     width: 100%; }
-  .contactForm .button {
-    background-color: #212529;
-    color: #cccccc;
-    padding: 1rem 0;
-    margin: 1rem 0;
-    cursor: pointer; }
-    .contactForm .button:hover {
-      background-color: #aa2b15;
-      transition: 0.3s; }
 
 .contactInfo {
   margin-top: 4rem;
@@ -51,22 +61,13 @@
 
 .social {
   text-align: center; }
-  .social a {
-    color: #6b6b6b;
-    font-size: 2rem;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 1rem; }
-    .social a:hover {
-      color: #aa2b15;
-      transition: ease 0.2s; }
 
 @media screen and (min-width: 600px) {
   .contactForm {
     padding: 0 3rem; }
     .contactForm input, .contactForm textarea, .contactForm .button {
       padding: 1rem;
-      margin: 1rem;
+      margin: 1rem 0;
       font-size: 1rem; }
   .contactInfo {
     padding: 0 4rem; }
@@ -106,6 +107,26 @@
     .contactInfo h3 {
       font-size: 2rem;
       margin: 1rem 0; } }
+
+.contactForm .button {
+  background-color: #212529;
+  color: #cccccc;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  cursor: pointer; }
+  .contactForm .button:hover {
+    background-color: #aa2b15;
+    transition: 0.3s; }
+
+.social a {
+  color: #6b6b6b;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem; }
+  .social a:hover {
+    color: #aa2b15;
+    transition: ease 0.2s; }
 
 * {
   margin: 0;
