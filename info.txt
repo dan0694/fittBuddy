@@ -4,3 +4,10 @@ Link a mockups: https://whimsical.com/MPfbdo4VRTrziZC4Q8MkTn
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SEO
+
+1. Se comprimieron las imagenes usadas.
+2. Se agregaron estas keywords: Fitness, Ejercicio, Costa Rica, Salud, Bienestar, Fit, Rutinas, Estilo de vida, FitnessCR.
+3. Se agregaron descripciones a todas las páginas html.
+4. Se verificó que todas las imagenes tuvieran un alt descriptivo.
