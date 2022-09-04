@@ -1,0 +1,143 @@
+@import "../pages/util";
+
+
+.general-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer"
+    ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.cover{
+    @extend %bg-img;
+    grid-area: main;
+
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    button{
+        margin-top: 40px;
+        padding: 15px 40px;
+        border: none;
+        background-color: $color-red;
+        color: $color-light-dos;
+        cursor: pointer;
+    }
+}
+
+.detail{
+    grid-area: section;
+    background-color: $color-light-dos;
+    padding: 20px 0 0 0;
+    text-align: center;
+
+    p{
+        font-size: 0.9rem;
+        text-align: justify;
+        padding: 0 20px;
+    }
+
+    img{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and(min-width:600px) {
+    .cover{
+        h2{
+            font-size: 2.5rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+        button{
+            font-size: 1.2rem;
+        }
+    }
+
+    .detail{
+        p{
+            font-size: 1.4rem;
+            padding: 1rem 2rem;
+        }
+        img{
+            width: 70%;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .cover{
+        width: 100%;
+        h2{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 2.4rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        button{
+            font-size: 1.5rem;
+        }
+    }
+
+    .detail{
+        display: flex;
+        align-items: center;
+
+        p{
+            padding: 0 8rem;
+            font-size: 1.5rem;
+        }
+
+        img{
+            width: 50%;
+            padding: 1rem 5rem 1rem 0;
+        }
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .cover-left{
+        width: 65%;
+    }
+
+    .cover-right {
+        margin: 0 auto;
+    }
+
+   
+}

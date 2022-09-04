@@ -1,0 +1,84 @@
+@media screen and (min-width:1024px) {
+    /* Animaciones */
+
+    .fadeRightUno {
+        animation-name: fadeRight;
+        animation-duration: 1s;
+    
+      }
+     .fadeRightDos {
+        animation-name: fadeRight;
+        animation-duration: 2s;
+    
+      }
+     .fadeRightTres {
+        animation-name: fadeRight;
+        animation-duration: 3s;
+    
+      }
+     .fadeUpUno {
+        animation-name: fadeUp;
+        animation-duration: .5s;
+    
+      }
+     .fadeUpDos {
+        animation-name: fadeUp;
+        animation-duration: 1s;
+    
+      }
+     .fadeUpTres {
+        animation-name: fadeUp;
+        animation-duration: 1.5s;
+    
+      }
+     .fadeUpCuatro {
+        animation-name: fadeUp;
+        animation-duration: 2s;
+    
+      }
+     .fadeUpCinco {
+        animation-name: fadeUp;
+        animation-duration: 2.5s;
+    
+      }
+
+      .fadeLeft {
+        animation-name: fadeLeft;
+        animation-duration: 1s;
+    
+      }
+}
+
+
+@keyframes fadeLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-2000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+
+ /* Keyframes */
+  @keyframes fadeRight {
+    0% {
+       opacity: 0;
+       transform: translateX(2000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+  @keyframes fadeUp {
+    0% {
+       opacity: 0;
+       transform: translateY(300px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }  

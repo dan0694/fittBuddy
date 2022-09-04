@@ -1,5 +1,10 @@
-@import "./pages/contact";
 @import "./pages/util";
+@import "./pages/animations";
+@import "./pages/contact";
+@import "./pages/main";
+@import "./pages/about";
+@import "./pages/app";
+@import "./pages/testimonials";
 
 
 * {
@@ -10,3 +15,78 @@ body {
     @include body
 
 }
+
+.general-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer"
+    ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+header{
+    grid-area: header;
+    ul{
+        li{
+            a{
+                &:hover{
+                    color: $color-red !important;
+                    transition: 0.2s;
+                }
+                &.active{
+                    color: $color-red-light !important;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+    width: 100%;
+    background-color: $color-dark-uno;
+    font-size: 1rem;
+    padding: 10px 0;
+    color: $color-light-dos;
+    text-align: center;
+
+    p{
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and(min-width:600px) {
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around; 
+        p{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    footer{
+        p{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+
+
+

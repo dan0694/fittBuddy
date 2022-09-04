@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 // Colores
 
+$color-white: #ffffff;
 $color-light-dos: #e2e2e2;
 $color-light-tres: #cccccc;
 $color-gray: #6b6b6b;
 $color-dark-uno:#212529;
 $color-dark-dos: #181818;
 $color-red:#aa2b15;
+$color-red-light: #ce3f26;
+$bg-linear: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/img01.jpg");
 
 // Breakpoints
 
@@ -19,7 +24,7 @@ $bp-pc: 1024px;
     padding: 1rem 0;
     margin: 1rem 0;
     cursor: pointer;
-
+    border: none;
     &:hover{
         background-color: $color-red; 
            transition: 0.3s;
@@ -37,6 +42,15 @@ $bp-pc: 1024px;
             color: $color-red;
             transition: ease 0.2s;
         }
+}
+
+%bg-img{
+    padding: 20px 20px;
+    text-align: center;
+    color: $color-white;
+    background-image: $bg-linear;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 // Mapas

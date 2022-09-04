@@ -1,0 +1,145 @@
+
+@import "./pages/util";
+
+.app-container{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer"
+    ;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-cover{
+    text-align: center;
+    padding: 1rem;
+
+    h2{
+        padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    button{
+        @extend %btn-primary;
+        width: 10rem;
+        text-align: center;
+    }
+
+}
+
+.app-cover-image{
+    img{
+
+        width: 100%;
+    }
+}
+.app-detail{
+    padding: 1rem;
+
+    img{
+        width: 100%;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    ul{
+        padding: 1rem; 
+    }
+    li{
+        list-style: none;
+        padding-bottom: 3.5rem;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .app-cover{
+        h2{
+            padding: 1rem 0;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        button{
+            font-size: 1.5rem;
+            width: 18rem;
+        }
+    }
+
+    .app-detail{
+        h3{
+            font-size: 2.5rem; 
+        }
+        ul{
+            li{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .app-cover{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 4.5rem;
+        }
+        button{
+            width: 30rem;
+        }
+        p{
+            font-size: 2rem;
+            text-align: justify; 
+        }
+    }
+    .app-cover-image{
+        img{
+    
+            width: 75%;
+        }
+    }
+
+    .app-cover-detail{
+        padding: 1rem 0 0 5rem;
+        text-align: center;
+    }
+
+    .app-detail{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+
+    .app-detail-image {
+        width: 100%;
+    }
+
+    .app-detail-content {
+        padding: 3rem;
+        h3{
+            font-size: 2.5rem;
+            text-align: center;
+            padding-bottom: 1rem;  
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 1.5rem;
+            column-gap: 5rem; 
+        }
+    }
+}

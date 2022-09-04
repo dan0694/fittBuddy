@@ -1,0 +1,28 @@
+@import "./pages/util";
+
+.testimonials{
+    background-color: $color-light-dos;
+    width: 100%;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 36px;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+@media screen and (min-width:600px) {
+    .testimonials {
+        height: 950px;
+        padding: 50px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .testimonials {
+        height: 800px;
+        padding: 50px;
+    }
+}

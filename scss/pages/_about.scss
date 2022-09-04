@@ -1,0 +1,75 @@
+@import "./pages/util";
+
+.about-container{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer"
+    ;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-cover{
+    @extend %bg-img;
+    padding-bottom: 50%;
+
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        padding: 2% 0;
+    }
+}
+
+.detail{
+    padding-bottom: 20px;
+
+    h3{
+        font-size: 1.5rem;
+        padding: 15px 0;
+    }
+
+    h4{
+        font-size: 1.1rem;
+        display: inline-block;
+        padding: 1rem 0;
+        border-bottom: 3px solid $color-red;
+    }
+    img{
+        width: 95%;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .about-cover{
+        padding-bottom: 22%;
+
+        h2{
+            font-size: 4rem;
+        }
+    }
+
+    .about-detail{
+        padding-bottom: 20px;
+        justify-content: center;
+
+        h3{
+            font-size: 2.5rem;
+        }
+        h4{
+            font-size: 2rem;
+            padding: 15px 0;
+        }
+        p{
+            font-size: 1.5rem;
+            padding: 0 3rem;
+        }
+        img{
+            width: 85%;
+            padding: 0;
+        }
+    }
+}
