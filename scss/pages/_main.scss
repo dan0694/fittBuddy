@@ -11,8 +11,6 @@
         "section"
         "footer"
     ;
-    justify-content: center;
-    justify-items: center;
     align-items: center;
 }
 
@@ -36,12 +34,12 @@
     }
 
     button{
-        margin-top: 40px;
-        padding: 15px 40px;
-        border: none;
-        background-color: $color-red;
-        color: $color-light-dos;
-        cursor: pointer;
+        @extend %btn-primary;
+        background-color: $color-red !important;
+        a{
+            text-decoration: none;
+            padding: 0 0.5rem;
+        }
     }
 }
 
@@ -58,7 +56,7 @@
     }
 
     img{
-        width: 100%;
+        max-width: 80%;
         margin-top: 15px;
     }
 }
@@ -86,7 +84,7 @@
             padding: 1rem 2rem;
         }
         img{
-            width: 70%;
+            max-width: 70%;
             padding-bottom: 2rem;
         }
     }
@@ -120,7 +118,7 @@
         }
 
         img{
-            width: 50%;
+            max-width: 35%;
             padding: 1rem 5rem 1rem 0;
         }
     }
@@ -139,5 +137,5 @@
         margin: 0 auto;
     }
 
-   
+
 }

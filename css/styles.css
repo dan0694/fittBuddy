@@ -1,17 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-.contactForm .button, .app-cover button {
+.contactForm .button, .cover button, .app-cover button {
   background-color: #212529;
   color: #cccccc;
   padding: 1rem 0;
   margin: 1rem 0;
   cursor: pointer;
   border: none; }
-  .contactForm .button:hover, .app-cover button:hover {
+  .contactForm .button:hover, .cover button:hover, .app-cover button:hover {
     background-color: #aa2b15;
     transition: 0.3s; }
 
@@ -88,14 +83,14 @@
     opacity: 1;
     transform: translateY(0); } }
 
-.contactForm .button, .app-cover button {
+.contactForm .button, .cover button, .app-cover button {
   background-color: #212529;
   color: #cccccc;
   padding: 1rem 0;
   margin: 1rem 0;
   cursor: pointer;
   border: none; }
-  .contactForm .button:hover, .app-cover button:hover {
+  .contactForm .button:hover, .cover button:hover, .app-cover button:hover {
     background-color: #aa2b15;
     transition: 0.3s; }
 
@@ -123,7 +118,7 @@
 
 .contact {
   padding: 1rem;
-  background-color: #e2e2e2;
+  background-color: #f0f0f0;
   color: #181818;
   font-weight: bold; }
   .contact h2 {
@@ -140,6 +135,7 @@
     padding: 15px;
     font-size: 15px;
     border: 1px solid #cccccc;
+    margin: 10px 0;
     display: block;
     width: 100%; }
 
@@ -185,7 +181,7 @@
   .form-container {
     display: grid;
     grid-template-areas: "input-a input-b" "input-c input-d" "textarea-a textarea-a";
-    gap: 1rem; }
+    gap: 0.6rem; }
   .input-a {
     grid-area: input-a; }
   .input-b {
@@ -198,7 +194,7 @@
     grid-area: textarea-a; }
   .contactForm legend, .contactForm input, .contactForm textarea {
     font-size: 1.3rem;
-    padding: 1.5rem; }
+    padding: 1.2rem; }
   .contactInfo {
     margin: 5rem 3rem; }
     .contactInfo p {
@@ -207,14 +203,14 @@
       font-size: 2rem;
       margin: 1rem 0; } }
 
-.contactForm .button, .app-cover button {
+.contactForm .button, .cover button, .app-cover button {
   background-color: #212529;
   color: #cccccc;
   padding: 1rem 0;
   margin: 1rem 0;
   cursor: pointer;
   border: none; }
-  .contactForm .button:hover, .app-cover button:hover {
+  .contactForm .button:hover, .cover button:hover, .app-cover button:hover {
     background-color: #aa2b15;
     transition: 0.3s; }
 
@@ -241,8 +237,6 @@
   grid-template-columns: auto;
   grid-template-rows: 1fr auto;
   grid-template-areas: "header" "main" "section" "footer";
-  justify-content: center;
-  justify-items: center;
   align-items: center; }
 
 .cover {
@@ -257,16 +251,14 @@
     font-size: 0.9rem;
     padding: 1rem; }
   .cover button {
-    margin-top: 40px;
-    padding: 15px 40px;
-    border: none;
-    background-color: #aa2b15;
-    color: #e2e2e2;
-    cursor: pointer; }
+    background-color: #aa2b15 !important; }
+    .cover button a {
+      text-decoration: none;
+      padding: 0 0.5rem; }
 
 .detail {
   grid-area: section;
-  background-color: #e2e2e2;
+  background-color: #f0f0f0;
   padding: 20px 0 0 0;
   text-align: center; }
   .detail p {
@@ -274,7 +266,7 @@
     text-align: justify;
     padding: 0 20px; }
   .detail img {
-    width: 100%;
+    max-width: 80%;
     margin-top: 15px; }
 
 @media screen and (min-width: 600px) {
@@ -290,7 +282,7 @@
     font-size: 1.4rem;
     padding: 1rem 2rem; }
   .detail img {
-    width: 70%;
+    max-width: 70%;
     padding-bottom: 2rem; } }
 
 @media screen and (min-width: 1024px) {
@@ -311,7 +303,7 @@
       padding: 0 8rem;
       font-size: 1.5rem; }
     .detail img {
-      width: 50%;
+      max-width: 35%;
       padding: 1rem 5rem 1rem 0; }
   .main-container {
     display: flex;
@@ -323,14 +315,14 @@
   .cover-right {
     margin: 0 auto; } }
 
-.contactForm .button, .app-cover button {
+.contactForm .button, .cover button, .app-cover button {
   background-color: #212529;
   color: #cccccc;
   padding: 1rem 0;
   margin: 1rem 0;
   cursor: pointer;
   border: none; }
-  .contactForm .button:hover, .app-cover button:hover {
+  .contactForm .button:hover, .cover button:hover, .app-cover button:hover {
     background-color: #aa2b15;
     transition: 0.3s; }
 
@@ -396,16 +388,18 @@
       padding: 0 3rem; }
     .about-detail img {
       width: 85%;
-      padding: 0; } }
+      padding: 0; }
+  .detail-left {
+    max-width: 55%; } }
 
-.contactForm .button, .app-cover button {
+.contactForm .button, .cover button, .app-cover button {
   background-color: #212529;
   color: #cccccc;
   padding: 1rem 0;
   margin: 1rem 0;
   cursor: pointer;
   border: none; }
-  .contactForm .button:hover, .app-cover button:hover {
+  .contactForm .button:hover, .cover button:hover, .app-cover button:hover {
     background-color: #aa2b15;
     transition: 0.3s; }
 
@@ -431,7 +425,8 @@
   display: grid;
   grid-template-areas: "header" "main" "section" "footer";
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #f0f0f0; }
 
 .app-cover {
   text-align: center;
@@ -459,7 +454,7 @@
   .app-detail li {
     list-style: none;
     padding-bottom: 3.5rem;
-    text-align: justify; }
+    text-align: center; }
 
 @media screen and (min-width: 600px) {
   .app-cover h2 {
@@ -514,14 +509,14 @@
       row-gap: 1.5rem;
       column-gap: 5rem; } }
 
-.contactForm .button, .app-cover button {
+.contactForm .button, .cover button, .app-cover button {
   background-color: #212529;
   color: #cccccc;
   padding: 1rem 0;
   margin: 1rem 0;
   cursor: pointer;
   border: none; }
-  .contactForm .button:hover, .app-cover button:hover {
+  .contactForm .button:hover, .cover button:hover, .app-cover button:hover {
     background-color: #aa2b15;
     transition: 0.3s; }
 
@@ -544,7 +539,7 @@
   background-size: cover; }
 
 .testimonials {
-  background-color: #e2e2e2;
+  background-color: #f0f0f0;
   width: 100%;
   padding: 5px 15px;
   display: flex;
@@ -562,7 +557,9 @@
 @media screen and (min-width: 1024px) {
   .testimonials {
     height: 800px;
-    padding: 50px; } }
+    padding: 50px; }
+  .card {
+    max-width: 75%; } }
 
 * {
   margin: 0;
@@ -573,16 +570,6 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: #ffffff; }
 
-.general-container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr auto;
-  grid-template-areas: "header" "main" "section" "footer";
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
 header {
   grid-area: header; }
   header ul li a:hover {
@@ -591,19 +578,27 @@ header {
   header ul li a.active {
     color: #ce3f26 !important; }
 
+.navbar-brand img {
+  width: 250px !important; }
+
 footer {
   display: flex;
   flex-direction: column;
   grid-area: footer;
   width: 100%;
   background-color: #212529;
-  font-size: 1rem;
   padding: 10px 0;
-  color: #e2e2e2;
+  color: #f0f0f0;
   text-align: center; }
   footer p {
     padding: 5px;
     font-size: 0.9rem; }
+  footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.5rem; }
+    footer a:hover {
+      color: #ce3f26 !important; }
 
 @media screen and (min-width: 600px) {
   footer {

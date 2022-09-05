@@ -11,6 +11,7 @@
     ;
     justify-content: center;
     align-items: center;
+    background-color: $color-light-dos;
 }
 
 .app-cover{
@@ -54,7 +55,7 @@
     li{
         list-style: none;
         padding-bottom: 3.5rem;
-        text-align: justify;
+        text-align: center;
     }
 }
 

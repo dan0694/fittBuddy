@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import "./pages/util";
 @import "./pages/animations";
 @import "./pages/contact";
@@ -16,23 +17,6 @@ body {
 
 }
 
-.general-container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "section"
-        "footer"
-    ;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
-
 header{
     grid-area: header;
     ul{
@@ -49,6 +33,9 @@ header{
         }
     }
 }
+.navbar-brand img{
+    width: 250px !important;
+}
 
 footer{
     display: flex;
@@ -56,7 +43,6 @@ footer{
     grid-area: footer;
     width: 100%;
     background-color: $color-dark-uno;
-    font-size: 1rem;
     padding: 10px 0;
     color: $color-light-dos;
     text-align: center;
@@ -64,6 +50,14 @@ footer{
     p{
         padding: 5px;
         font-size: 0.9rem;
+    }
+    a{
+        color: $color-light-dos;
+        text-decoration: none;
+        font-size: 1.5rem;
+        &:hover{
+            color: $color-red-light !important;
+        }
     }
 }
 

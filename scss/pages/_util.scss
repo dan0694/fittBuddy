@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 
 // Colores
 
 $color-white: #ffffff;
-$color-light-dos: #e2e2e2;
+$color-light-dos: #f0f0f0;
 $color-light-tres: #cccccc;
 $color-gray: #6b6b6b;
 $color-dark-uno:#212529;
@@ -60,7 +60,8 @@ $input:(
     border: 1px solid $color-light-tres,
     font: 15px,
     display: block,
-    width: 100%
+    width: 100%,
+    margin: 10px 0
 );
 
 
